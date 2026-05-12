@@ -22,8 +22,8 @@ function App() {
       .order('created_at', { ascending: false });
 
     if (fetchError) {
-      console.error('Erro completo:', fetchError);
-      setError('Erro ao carregar dados: ' + JSON.stringify(fetchError));
+      console.error('Erro ao buscar twins:', fetchError);
+      setError('Erro ao carregar dados: ' + fetchError.message);
       return;
     }
 
@@ -69,7 +69,6 @@ function App() {
 
   const handleConfirmTwin = async (twinId: string) => {
     setError(null);
-
     const { error: updateError } = await supabase
       .from('twins')
       .update({ is_confirmed: true, ai_score: 0.85 })
@@ -85,7 +84,6 @@ function App() {
   const handleDeleteTwin = async (twinId: string) => {
     if (!confirm('Apagar este twin?')) return;
     setError(null);
-
     const { error: deleteError } = await supabase
       .from('twins')
       .delete()
