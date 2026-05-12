@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.env.local
+*.local
+.DS_Store
+pnpm-debug.log*
+
+/src/generated/prisma
