@@ -58,3 +58,4 @@ Isto regera também o `package-lock.json` (foi removido do repo para não fixar 
 ## Licença
 
 Definir pela equipa do hackathon.
+"# ampere-os" 
