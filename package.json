@@ -1,0 +1,43 @@
+{
+  "name": "ampere-os",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "your-build-command-here"
+  },
+  "dependencies": {}
+  }
+{
+  "name": "ampere-web",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.105.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "prisma": "^7.8.0",
+    "supabase": "^2.98.2",
+    "tailwindcss": "^3.4.15",
+    "typescript": "~5.6.3",
+    "vite": "5.4.11"
+  },
+  "packageManager": "pnpm@9.14.2"
+}
