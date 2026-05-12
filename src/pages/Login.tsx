@@ -14,7 +14,7 @@ export function Login() {
     setError('');
     setLoading(true);
 
-    const { data, error: err } = isSignUp
+    const { error: err } = isSignUp
       ? await signUp(email, password)
       : await signIn(email, password);
 
